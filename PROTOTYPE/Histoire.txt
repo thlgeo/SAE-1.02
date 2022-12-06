@@ -1,0 +1,85 @@
+ 
+    ________________________________________________________________
+   /								    \
+  |	SALUTATION !					             |
+  |								     |
+  |	Aujourd'hui est un GRAND JOUR ! Il s'agit de l'ouverture     |
+  |	ton magasin de bonbons ! 				     |
+  |								     |
+  |	Pour ce premier jour d'ouverture il nous faudra être	     |
+  |	le plus rapide possible en caisse de manière à gagner un     |
+  |	MAXIMUM de points ! 					     |
+  |								     |
+   \________________________________________________________________/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ________________________________________________________________
+   /								    \
+  |	Pour cela nous allons tout d'abord apprendre les règles :    |
+  |								     |
+  |	- Les clients vont t'apporter leurs achats , il te faudra    |
+  |	 repondre à la somme qu'ils vous devront via un calcule	     |
+  |	 qui s'affichera sous divers forme selon la difficulter	     |
+  |		     						     |
+  |	- Au plus vous répondrez vite au plus vous marquer de        |
+  |	 points qui s'ajouterons à votre score et éviterai de	     |
+  |	 des clients impatient .	    		   	     |
+  |								     |
+  |	- A chaque fin de journée , si le score à atteindre est	     |
+  |	 dépasser l'aventure continue , sinon vous avez perdu .      |
+  |	 	  	     	      	      	   	      	     |
+  |	- Une journée se termine lorsque le tableau de		     |
+  |	 multiplication / addition / divition est complet .	     |	
+  |								     |
+  |	- Pour chaque fin de journée vous pouvez sauvegarder vôtre   |
+  |	 partie en cours et la reprendre plus tard .      	     |
+   \________________________________________________________________/
+
+
+
+
+
+
+
+    ________________________________________________________________
+   /								    \
+  |	A savoir :					             |
+  |								     |
+  | 	En fonction de la difficulter choisie vous aurait un         |
+  |	affichage different et des calcules different , mais aussi   |
+  |	des score à atteindre plus ou moins élevé !	     	     |
+  |		     						     |
+  |	EST TU SÛR DE TON CHOIX ?				     |
+  |	 					       	      	     |
+  |	1 - OUI	                                        2 - NON	     |
+   \________________________________________________________________/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
