@@ -17,6 +17,10 @@ class SAE extends Program
         {
             nbMulti = 1;
         }
+        else if(equals(d.difficulte,"moyen"))
+        {
+            nbMulti = 1 + (int)(random() * 2);
+        }
         else
         {
             nbMulti = 1 + (int)(random() * 3);
@@ -27,6 +31,16 @@ class SAE extends Program
             multi[i] = creerMultiplication();
         }
         return multi;
+    }
+
+    Joueur creerJoueur()
+    {
+        Joueur j = new Joueur();
+        j.pseudo = "test";
+        j.score = 0;
+        j.difficulte = "facile";
+        j.journeePasse = 3;
+        return j;
     }
 
     int resultatMulti(Multiplication multi)
@@ -83,26 +97,26 @@ class SAE extends Program
         }
     }
 
-    Difficulte creerDifficulte(String diff)
+    Difficulte creerDifficulte(Joueur j)
     {
         Difficulte d = new Difficulte();
-        d.difficulte = diff;
+        d.difficulte = j.difficulte;
         if(equals(d.difficulte,"facile"))
         {
             d.nbClientsMax = 15;
             d.multiplicateurScore = 1.25;
-            d.intervalle = 17;
+            d.intervalle = 15.25 - (0.25*j.journeePasse);
         }
         else if(equals(d.difficulte,"moyen"))
         {
             d.nbClientsMax = 12;
             d.multiplicateurScore = 1.0;
-            d.intervalle = 12;
+            d.intervalle = 15.25 - (0.25*j.journeePasse);
         }
         else{
             d.nbClientsMax = 8;
             d.multiplicateurScore = 0.75;
-            d.intervalle = 8;
+            d.intervalle = 15.25 - (0.25*j.journeePasse);
         }
         return d;
     }
@@ -113,7 +127,6 @@ class SAE extends Program
         {
             if(duree > d.intervalle)
             {
-                print("Vraie");
                 return (int)(random()*3);
             }
             else if(nbClient - 1 > 0)
@@ -125,48 +138,173 @@ class SAE extends Program
         
     }
 
-    void algorithm()
+    void afficheQueue(int nbClient)
     {
-        print("Entrez difficulté : ");
-        String diff = readString();
-        Difficulte d = creerDifficulte(diff);
-        Multiplication[] multi = creerMultiMultiplication(d);
-        int nbClient = 1+(int)(random()*d.nbClientsMax/3);
-        int score = 0;
-        double debut;
-        double fin;
-        while(nbClient < d.nbClientsMax)
+        File fich = newFile("personnage.txt");
+        File etabli = newFile("etabli.txt");
+        String affiche = "";
+        String body = "";
+        String partEtabli = "";
+        for(int j=0;j<5;j++)
         {
-            debut = getTime();
-            println(toString(multi) + " : ");
-            int res = readInt();
-            fin = getTime();
-            double duree = fin - debut;
-            if(res == -1)
+            body = readLine(fich);
+            partEtabli = readLine(etabli);
+            if(j == 4)
             {
-                afficherTableMulti();
-                debut = getTime();
-                println(toString(multi) + " : ");
-                res = readInt();
-                fin = getTime();
-                duree = (fin - debut)-5000;
-            }
-            else if(res == resultatMulti(multi))
-            {
-                score += 100 * d.multiplicateurScore;
-                println("bien joué\nVotre score : " + score);
-                println("Nombre de clients : "+nbClient);
+                affiche += ajouterCaractere(70-(nbClient*5),'_');
             }
             else
             {
-                score -= 50 / d.multiplicateurScore;
-                println("perdu\nVotre score : " + score);
-                println("Nombre de clients : "+nbClient);
+                affiche += ajouterCaractere(70-(nbClient*5),' ');
+            }
+            if(nbClient == 1)
+            {
+                if(j == 4)
+                {
+                    affiche += "______" + body + partEtabli + body;
+                }
+                else
+                {
+                    affiche +=  "      " + body + partEtabli + body;
+                }                
+            }
+            else
+            {
+                for(int i=0;i<nbClient-1;i++)
+                {
+                    affiche += body;
+                    if(i == nbClient - 2 && j == 4)
+                    {
+                        affiche += "______" + body + partEtabli + body;
+                    }
+                    else if(i == nbClient - 2)
+                    {
+                        affiche +=  "      " + body + partEtabli + body;
+                    }
+                }
             }
             
-            nbClient += ajoutClient((duree)/1000,nbClient,d);
-            multi = creerMultiMultiplication(d);
+            
+            affiche += "\n";
         }
+
         
+        println(affiche);
+    }
+
+    void afficherJourneeTermine()
+    {
+        File fich = newFile("gagnant.txt");
+        File etabli = newFile("etabli.txt");
+        String affiche = "";
+        String body = "";
+        String partEtabli = "";
+        for(int j=0;j<5;j++)
+        {
+            body = readLine(fich);
+            partEtabli = readLine(etabli);
+            if(j == 4)
+            {
+                affiche += ajouterCaractere(76, '_') + partEtabli + body;
+            }
+            else
+            {
+                affiche +=  ajouterCaractere(76, ' ') + partEtabli + body;      
+            }      
+            affiche += "\n";
+        }
+
+        
+        println(affiche);
+    }
+
+    String ajouterCaractere(int nb, char car)
+    {
+        String ajout = "";
+        for(int i=0;i<nb;i++)
+        {
+            ajout += car;
+        }
+        return ajout;
+    }
+
+    int afficheMultiplication(Multiplication[] multi)
+    {
+        print(toString(multi) + " : ");
+        int res = readInt();
+        
+        return res;
+    }
+
+    boolean jourSuivant(int score, Joueur j)
+    {
+        boolean suivant = false;
+        if(score <= j.score || score*0.25 <= j.score)
+        {
+            j.journeePasse += 1;
+            suivant = true;
+            afficherJourneeTermine();
+        }
+        return suivant;
+    }
+
+    int creerNbClientJour(Difficulte d)
+    {
+        double max = d.nbClientsMax + (int)(random()*25-d.nbClientsMax);
+        return (int)d.nbClientsMax + (int)(random() * (max));
+    }
+
+    void algorithm()
+    {
+        Joueur j = creerJoueur();
+        Difficulte d = creerDifficulte(j);
+        Multiplication[] multi = creerMultiMultiplication(d);
+        int nbClient = 2+(int)(random()*d.nbClientsMax/3);
+        int nbClientJour = creerNbClientJour(d);
+        int scoreAtteindre = nbClientJour*(int)(100*d.multiplicateurScore);
+        double debut;
+        double fin;
+        double duree;
+        int res;
+        while(nbClient < d.nbClientsMax && nbClientJour > 0)
+        {
+            clearScreen();
+            println(nbClientJour);
+            println("Votre score : " + j.score);
+            println("Score à atteindre : "+scoreAtteindre);
+            println(nbClient);
+            afficheQueue(nbClient);
+            debut = getTime();
+            res = afficheMultiplication(multi);
+            fin = getTime();
+            duree = fin - debut;
+            if(res == -1)
+            {
+                afficherTableMulti();
+                afficheQueue(nbClient);
+                debut = getTime();
+                res = afficheMultiplication(multi);
+                fin = getTime();
+                duree = (fin - debut) - 5000;
+            }
+            if(res == resultatMulti(multi))
+            {
+                j.score += 100 * d.multiplicateurScore;
+                println("bien joué\n");
+                delay(1000);
+                nbClient += ajoutClient((duree)/1000,nbClient,d);
+            }
+            else
+            {
+                j.score -= 50 / d.multiplicateurScore;
+                println("perdu");
+                delay(1000);
+                nbClient += ajoutClient(d.intervalle + 5,nbClient,d);
+            }
+            nbClientJour -= 1;
+            multi = creerMultiMultiplication(d);
+            
+        }
+        jourSuivant(scoreAtteindre, j);
     }
 }
