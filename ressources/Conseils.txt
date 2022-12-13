@@ -1,0 +1,32 @@
+   _____ ____  _   _  _____ ______ _____ _       _____ 
+  / ____/ __ \| \ | |/ ____|  ____|_   _| |     / ____| 
+ | |   | |  | |  \| | (___ | |__    | | | |    | (___   
+ | |   | |  | | . ` |\___ \|  __|   | | | |     \___ \  
+ | |___| |__| | |\  |____) | |____ _| |_| |____ ____) |
+  \_____\____/|_| \_|_____/|______|_____|______|_____/___________________________________________________________
+ /                                                                                                               \
+|   Je vous propose quelques astuces pour faciliter la mémorisation des tables de multiplication.                 |
+|   A l’aide de ce tableau, les enfants comprendront que cet apprentissage n’est pas si fastidieux                |
+|   qu’il n’y paraît car la multiplication est commutative (cela signifie que quelque soit l’ordre                |
+|   des termes à multiplier, le résultat de la multiplication ne change pas).                                     |
+|   Ainsi, il n’est pas nécessaire d’apprendre 2×5 et 5×2 puisque le résultat est identique : un enfant           |
+|   qui maîtrise le résultat de 2×5 peut accéder facilement au résultat de 5×2 en inversant les termes.           |
+ \_______________________________________________________________________________________________________________/
+ 
+ - Table de 0 : il suffit de se raconter l’histoire “je prends zéro fois le multiplicateur donc j’ai zéro”
+
+ - Table de 1 : il suffit de se raconter l’histoire “je prends une fois le multiplicateur donc j’ai le multiplicateur “
+
+ - Table de 2 : multiplier par 2, c’est chercher le double.
+
+ - Table de 4 : multiplier par 4, c’est chercher le double du double.
+
+ - Table de 5 : on compte de 5 en 5 et les résultats finissent toujours par 0 ou 5.
+
+ - Table de 9 : il existe une astuce avec les mains pour retrouver rapidement et facilement les résultats dans la table de 9. Par exemple, pour 9×3, on met les mains devant soi paume 
+   face à soi et on baisse le 3ème doigt de la main gauche. A gauche du doigt baissé, c’est le chiffre des dizaines (2 doigts levés -> 2 dizaines) et à droite du doigt baissé, 
+   c’est le chiffre des unités (7 doigts baissés -> 7 unités). Le résultat de 9×3 est 27. Cette technique sur les doigts fonctionne pour tous les résultats de la table de 9. 
+   Un autre exemple avec 9×9 : les deux mains ouvertes devant soi, on baisse le neuvième doigt (index de la main droite). Il y a 8 doigts à gauche du doigt baissé (8 dizaines) 
+   et 1 doigt baissé à droite (1 unité). Le résultat de 9×9 est 81.
+
+ - Table de 10 : il suffit d’ajouter un 0 au multiplicateur (“je prends dix fois le multiplicateur “).

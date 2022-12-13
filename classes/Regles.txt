@@ -1,0 +1,69 @@
+  _____   __    _____ _      ______  _____                                       
+ |  __ \ _\_\_ / ____| |    |  ____|/ ____|                                      
+ | |__) | ____| |  __| |    | |__  | (___                                        
+ |  _  /|  _| | | |_ | |    |  __|  \___ \                                       
+ | | \ \| |___| |__| | |____| |____ ____) |                                      
+ |_|  \_\_____|\_____|______|______|_____/                                       
+                     
+_________________________________________________________________________________.                                          
+  Objectif du jeu :                                                              |
+                                                                                 |
+    Votre objectif est de faire perdurer votre nouvelle boutique de friandise .  |
+    Pour cela il vous faudra répondre aux questions de mathématique qui          |
+    represente la somme que le client vous doit . Ainsi au travers de Candy      |
+    Shop Math's Adventure , vous devrez éviter les fil d'attente interminable    | 
+    et les erreurs de comptage tout en etant le plus rapide possible afin        |
+    d'atteindre votre objectif journalier .                                      |
+                                                                                 |
+_________________________________________________________________________________|                                          
+  Quand sauvegarder ça partie ?                                                  |
+                                                                                 |
+    Vous ne pouvez sauvegarder qu'uniquement lorsque vous avez atteind la        |
+    fin d'une journée , alors l'option vous sera proposez et vous renvera dans   |
+    le menu principale si accepter , où vous pourrez y réacceder via la page     |
+    reprendre une partie dans le menu principale .                               |
+                                                                                 |
+_________________________________________________________________________________|
+  Changement de Couleur ?                                                        |
+                                                                                 |
+    Dans les parametres vous avez la possiblité de modifiers les couleurs de     |
+    votre interface , MAIS vous en serait seul résponsable du mauvais choix      |
+    de combinaison de couleur ! À cela , ses couleurs s'appliquerons tout le     |
+    long de votre jeu , jusqu'au redemarrage ou remodification des couleurs      |
+    dans le menu des parametres .                                                |
+                                                                                 |
+_________________________________________________________________________________|
+  Conseil et Revison ?                                                           |
+                                                                                 |                              
+    Une page de révision et de conseil est disponible dans le menu des parametes |
+    ayant pour objectif de vous aider à prendre en mains le jeu et à mieux       |
+    progresser dans votre aventure . Pensez-y en cas de difficulté ;)            |
+                                                                                 |
+_________________________________________________________________________________|
+  Système de Fil d'Attente                                                       |
+                                                                                 |
+    les fils d'attente sont representer par des personnages situé en ... à ... . |
+    Il symbolise le nombre de clients qui patients derriers le clients avec      |
+    lequel vous réaliser une vente .                                             |
+                                                                                 |
+_________________________________________________________________________________|
+  Tableau de multiplication                                                      |
+                                                                                 |
+    Le tableau de multiplication situer en ... à ... , est un tableau à 2        |
+    dimension représentent les calcules que vous avez réaliser jusqu'à           |
+    maintenant .                                                                 |
+                                                                                 |
+_________________________________________________________________________________|
+  La Difficulté                                                                  |
+                                                                                 |
+    Les differents niveau de difficulté que vous pouvez séléctionner (facile /   |
+    moyen / difficile) permettent de varier l'experience de jeu en modifiant     |
+    le score à atteindre , les points gagner , le nombre de clients , la vitesse |
+    à laquelle il faut répondre pour avoir le maximum des points .               |
+                                                                                 |
+_________________________________________________________________________________|    
+  Créateurs                                                                      |
+                                                                                 |
+    - Théo Lenglart                                                              |
+    - Clément Franckelemon                                                       |
+_________________________________________________________________________________|
