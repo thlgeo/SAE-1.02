@@ -58,23 +58,6 @@ class CandyShop extends Program{
 	return d;
     }
     
-    /*void actualiserScore(Joueur j,int reponse,int resultat,int seconde){
-	double multiplication;
-	if (seconde <= 5){
-	    multiplication = 1.00;
-	} else if (seconde <= 20) {
-	    multiplication = 0.75;
-	} else if (seconde <= 45) {
-	    multiplication = 0.50;
-	} else {
-	    multiplication = 0.25;
-	}
-	if(reponse == resultat){
-	    j.score += (int)(resultat*(1.25*multiplication));
-	} else {
-	    j.score -= (int)(resultat*(1.15*multiplication));
-	}
-    }*/
 
     void enregistrerJoueur(Joueur j){
         enregistrer(j,CLASSEMENT);
@@ -1107,7 +1090,7 @@ class CandyShop extends Program{
         return res;
     }
 
-    boolean jourSuivant(int score, Joueur j)
+    boolean jourSuivant(int score, Joueur j)            
     {
         boolean suivant = false;
         if(score == j.score || score*0.25 <= j.score)
@@ -1121,7 +1104,7 @@ class CandyShop extends Program{
 
     int creerNbClientJour(Difficulte d)
     {
-        return (int)(d.nbClientsMax + random() * 25);
+        return (int)(d.nbClientsMax + (int)(random() * (25-d.nbClientsMax)));
     }
 
 	String afficheCommandeClient(Multiplication[] multi, Difficulte d)
@@ -1136,11 +1119,6 @@ class CandyShop extends Program{
 		{
 			phrase += "(" + toString(multi) + ")";
 		}
-		/*println(ajouterCaractere(93-length(phrase),' ')+ajouterCaractere(length(phrase)+6, '_'));
-		println(ajouterCaractere(92-length(phrase), ' ') + "|" + ajouterCaractere(length(phrase)+6, ' ')+"|");
-		println(ajouterCaractere(92-length(phrase), ' ') + "|   " + phrase + "   |");
-		println(ajouterCaractere(92-length(phrase), ' ') + "|" + ajouterCaractere(length(phrase)-17, '_')+"  "+ajouterCaractere(21, '_')+"|");
-		println(ajouterCaractere(76,' ')+ "\\/");*/
 		return phrase;
 	}
 
@@ -1160,10 +1138,8 @@ class CandyShop extends Program{
         {
             clearScreen();
             println("Nombre de client aujourd'hui : " + nbClientJour);
-            println("Votre score : " + j.score);
-            println("Score à atteindre : "+scoreAtteindre);
+			println(ajouterCaractere(6,' ') + "Score :\n" + ajouterCaractere(6,' ') + ajouterCaractere(5+length("" + j.score)+length("" + scoreAtteindre),'#') + "\n" + ajouterCaractere(6,' ') + "# "+j.score + "/" + scoreAtteindre + " #\n" + ajouterCaractere(6,' ') + ajouterCaractere(5+length("" + j.score)+length("" + scoreAtteindre),'#'));
 			println("nombre de jour : " + j.journeePasse);
-            println(nbClient);
 			println("(tapez 'help' pour obtenir les tables de multiplications)");
             afficheQueue(nbClient,multi,j.difficulte);
             debut = getTime();
@@ -1179,6 +1155,20 @@ class CandyShop extends Program{
                 fin = getTime();
                 duree = (fin - debut) - 5000;
             }
+			while(equals(verifInt(res),"-1"))
+			{
+				clearScreen();
+				println("Nombre de client aujourd'hui : " + nbClientJour);
+				println(ajouterCaractere(6,' ') + "Score :\n" + ajouterCaractere(6,' ') + ajouterCaractere(5+length("" + j.score)+length("" + scoreAtteindre),'#') + "\n" + ajouterCaractere(6,' ') + "# "+j.score + "/" + scoreAtteindre + " #\n" + ajouterCaractere(6,' ') + ajouterCaractere(5+length("" + j.score)+length("" + scoreAtteindre),'#'));
+				println("nombre de jour : " + j.journeePasse);
+				println("(tapez 'help' pour obtenir les tables de multiplications)");
+				afficheQueue(nbClient,multi,j.difficulte);
+				println(ajouterCaractere(6,' ') + "Erreur, seul les entiers sont acceptés. Réessayer.");
+				debut = getTime();
+				res = afficheMultiplication(multi,j.difficulte);
+				fin = getTime();
+				duree += fin - debut;
+			}
             if(stringToInt(verifInt(res)) == resultatMulti(multi))
             {
                 j.score += 100 * j.difficulte.multiplicateurScore;
