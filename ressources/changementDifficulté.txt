@@ -1,0 +1,29 @@
+    ________________________________________________________________
+   /								    \
+  |	A savoir :					             |
+  |								     |
+  | 	En fonction de la difficulter choisie vous aurait un         |
+  |	affichage different et des calcules different , mais aussi   |
+  |	des score à atteindre plus ou moins élevé !	     	     |
+  |		     						     |
+  |	EST TU SÛR DE TON CHOIX ?				     |
+  |	 					       	      	     |
+  |	1 - OUI	                                        2 - NON	     |
+   \________________________________________________________________/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

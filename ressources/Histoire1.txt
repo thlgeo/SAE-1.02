@@ -1,0 +1,84 @@
+    ________________________________________________________________
+   /								    \
+  |	SALUTATION !					             |
+  |								     |
+  |	Aujourd'hui est un GRAND JOUR ! Il s'agit de l'ouverture     |
+  |	ton magasin de bonbons ! 				     |
+  |								     |
+  |	Pour ce premier jour d'ouverture il nous faudra être	     |
+  |	le plus rapide possible en caisse de manière à gagner un     |
+  |	MAXIMUM de points ! 					     |
+  |								     |
+   \________________________________________________________________/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ________________________________________________________________
+   /								    \
+  |	Marie était une jeune fille très créative et dynamique qui   |
+  |     avait toujours rêvé d'ouvrir sa propre boutique.             |
+  |                                                                  |
+  |     Elle a réalisé son rêve grâce à l'aide de sa famille et      |
+  |	de ses amis.                                                 |
+  |                                                                  |
+  |     Après plusieurs mois de travail acharné, elle ouvrit enfin   |
+  |     sa boutique. A présent c'est à toi de jouer pour faire en    |
+  |	sorte que Marie réussie à réaliser son rêve jusqu'au bout.   |
+  |								     |
+   \________________________________________________________________/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ________________________________________________________________
+   /								    \
+  |	Pour cela nous allons tout d'abord apprendre les règles :    |
+  |								     |
+  |	- Les clients vont t'apporter leurs achats , il te faudra    |
+  |	 repondre à la somme qu'ils vous devront via un calcule	     |
+  |	 qui s'affichera sous divers forme selon la difficulter	     |
+  |		     						     |
+  |	- Au plus vous répondrez vite au plus vous marquer de        |
+  |	 points qui s'ajouterons à votre score et éviterai de	     |
+  |	 des clients impatient .	    		   	     |
+  |								     |
+  |	- A chaque fin de journée , si le score à atteindre est	     |
+  |	 dépasser l'aventure continue , sinon vous avez perdu .      |
+  |	 	  	     	      	      	   	      	     |
+  |	- Une journée se termine lorsque le tableau de		     |
+  |	 multiplication / addition / divition est complet .	     |	
+  |								     |
+  |	- Pour chaque fin de journée vous pouvez sauvegarder vôtre   |
+  |	 partie en cours et la reprendre plus tard .      	     |
+   \________________________________________________________________/
+
+
+
+
+
+
+
