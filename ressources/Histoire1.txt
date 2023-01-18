@@ -54,25 +54,23 @@
 
 
 
-    ________________________________________________________________
+     ________________________________________________________________
    /								    \
   |	Pour cela nous allons tout d'abord apprendre les règles :    |
   |								     |
-  |	- Les clients vont t'apporter leurs achats , il te faudra    |
+  |	- Les clients vont t'apporter leur achats , il te faudra     |
   |	 repondre à la somme qu'ils vous devront via un calcule	     |
-  |	 qui s'affichera sous divers forme selon la difficulter	     |
+  |	 qui s'affichera sous divers forme selon la difficulté	     |
   |		     						     |
   |	- Au plus vous répondrez vite au plus vous marquer de        |
   |	 points qui s'ajouterons à votre score et éviterai de	     |
-  |	 des clients impatient .	    		   	     |
+  |	 des clients impatients.       	    		   	     |
   |								     |
   |	- A chaque fin de journée , si le score à atteindre est	     |
-  |	 dépasser l'aventure continue , sinon vous avez perdu .      |
+  |	 dépassé, l'aventure continue , sinon vous avez perdu .      |
   |	 	  	     	      	      	   	      	     |
-  |	- Une journée se termine lorsque le tableau de		     |
-  |	 multiplication / addition / divition est complet .	     |	
   |								     |
-  |	- Pour chaque fin de journée vous pouvez sauvegarder vôtre   |
+  |	- Pour chaque fin de journée vous pouvez sauvegarder votre   |
   |	 partie en cours et la reprendre plus tard .      	     |
    \________________________________________________________________/
 
