@@ -1,6 +1,6 @@
 # Candy Shop Math's Adventure
 
-Développé par Clément Franckelemon et Théo Lenglart le plus beau
+Développé par Clément Franckelemon et Théo Lenglart
 Contacts : clement.franckelemon.etu@univ-lille.fr , theo.lenglart.etu@univ-lille.fr
 
 ## Présentation de Candy Shop Math's Adventure
